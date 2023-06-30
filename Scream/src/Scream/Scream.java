@@ -13,7 +13,9 @@ import java.util.List;
 
 public class Scream {
 
+    private static final InterPreter interpreter = new InterPreter();
     static boolean hadError = false;
+    static boolean hadRuntimeError = false;
 
     public static void main(String[] args) throws IOException {
         if (args.length > 1) {
@@ -44,6 +46,7 @@ public class Scream {
         run(new String(bytes, Charset.defaultCharset()));
 
         if (hadError) System.exit(65);
+        if (hadRuntimeError) System.exit(70);
     }
 
     private static void run(String code) throws IOException {
@@ -54,7 +57,7 @@ public class Scream {
 
         if (hadError) return;
 
-        System.out.println(new AstPrinter().print(expression));
+        interpreter.interPreter(expression);
     }
 
     static void error(int line, String message) {
@@ -73,6 +76,12 @@ public class Scream {
         } else {
             report(token.line, " at '" + token.lexeme + "'", message);
         }
+    }
+
+    static void runtimeError(RuntimeError error) {
+        System.err.println(error.getMessage() +
+                "\n[line " + error.token.line + "]");
+        hadRuntimeError = true;
     }
 
 }

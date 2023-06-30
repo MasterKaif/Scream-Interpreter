@@ -24,6 +24,8 @@ public class Scanner {
         keywords.put("BEGIN", BEGIN);
         keywords.put("END", END);
         keywords.put("PRINT", PRINT);
+        keywords.put("FOR", FOR);
+        keywords.put("CLASS", CLASS);
         keywords.put("ARRAY", ARRAY);
         keywords.put("IF", IF);
         keywords.put("ELSE", ELSE);
@@ -162,7 +164,7 @@ public class Scanner {
             while (isDigit(peek())) advance();
         }
 
-        addToken(NUMBER, source.substring(start, current));
+        addToken(NUMBER, Double.parseDouble(source.substring(start, current)));
     }
 
     private char peekNext() {
