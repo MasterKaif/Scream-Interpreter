@@ -52,8 +52,10 @@ public class Scream {
     private static void run(String code) throws IOException {
         Scanner scanner = new Scanner(code);
         List<Token> tokens = scanner.scanTokens();
+//        System.out.println(tokens);
         Parser parser = new Parser(tokens);
         List<Stmt> statements = parser.parse();
+//        System.out.println(statements);
 
         if (hadError) return;
 

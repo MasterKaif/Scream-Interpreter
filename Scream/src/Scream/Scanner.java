@@ -113,13 +113,17 @@ public class Scanner {
                 string();
                 break;
             case '|':
+//                System.out.println("got one or");
                 if (match('|')) {
+//                    System.out.println("got second or");
                     addToken(OR);
                 }
+                break;
             case '&':
                 if (match('&')) {
                     addToken(AND);
                 }
+                break;
             default:
                 if (isDigit(c)) {
                     number();
