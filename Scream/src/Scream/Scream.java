@@ -53,11 +53,11 @@ public class Scream {
         Scanner scanner = new Scanner(code);
         List<Token> tokens = scanner.scanTokens();
         Parser parser = new Parser(tokens);
-        Expr expression = parser.parse();
+        List<Stmt> statements = parser.parse();
 
         if (hadError) return;
 
-        interpreter.interPreter(expression);
+        interpreter.interPreter(statements);
     }
 
     static void error(int line, String message) {
