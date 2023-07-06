@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b37d951-1412-4161-88fb-3f803f8d60c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Scream/src/Scream/InterPreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scream/src/Scream/RuntimeError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/Scanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/Scream.class" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/Scream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/Scream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/Scream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/TokenType.class" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/TokenType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scream/src/Scream/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/Scream/src/Scream/TokenType.java" afterDir="false" />
+    <list default="true" id="5b37d951-1412-4161-88fb-3f803f8d60c3" name="Changes" comment="added interpreter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/AstPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/AstPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Binary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Binary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Grouping.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Grouping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Literal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Literal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Unary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Unary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr$Visitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Expr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/InterPreter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/InterPreter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/InterPreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/InterPreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Parser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Parser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Parser$ParseError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Parser$ParseError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Scanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/Scream/Scream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/Scream/Scream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scream/tool/GenerateAst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scream/tool/GenerateAst.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,12 +50,50 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "C:/Users/kaifm/MyProjects/Scream-Compiler",
+    "last_opened_file_path": "C:/Users/kaifm/MyProjects/Scream-Compiler/Scream/src/Scream/Scream.java",
     "onboarding.tips.debug.path": "C:/Users/kaifm/MyProjects/Scream-Compiler/tool/src/Main.java",
     "settings.editor.selected.configurable": "GitLink.AutoDetectSettings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaifm\MyProjects\Scream-Compiler\Scream\src\Scream" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Scream">
+    <configuration name="Scream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scream.Scream" />
+      <module name="Scream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scream" type="Java Scratch">
+      <option name="MAIN_CLASS_NAME" value="Scream" />
+      <option name="SCRATCH_FILE_URL" value="file://$PROJECT_DIR$/Scream/src/Scream/Scream.java" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Scream" />
+      <item itemvalue="Java Scratch.Scream" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Scream" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +103,14 @@
       <option name="presentableId" value="Default" />
       <updated>1687603159308</updated>
     </task>
+    <task id="LOCAL-00001" summary="added interpreter">
+      <created>1688110189708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688110189708</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added interpreter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added interpreter" />
   </component>
 </project>
