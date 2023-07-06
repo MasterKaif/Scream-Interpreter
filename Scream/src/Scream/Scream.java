@@ -59,6 +59,11 @@ public class Scream {
 
         if (hadError) return;
 
+        Resolver resolver = new Resolver(interpreter);
+        resolver.resolve(statements);
+
+        if (hadError) return;
+
         interpreter.interPreter(statements);
     }
 

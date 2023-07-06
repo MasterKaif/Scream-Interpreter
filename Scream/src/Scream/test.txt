@@ -1,0 +1,9 @@
+FUNC THRICE(NUMBER)
+  BEGIN
+    FOR (VAR I = 1; I<=3; I = I + 1)
+    BEGIN
+    PRINT NUMBER;
+    END
+  END
+
+THRICE(5);
